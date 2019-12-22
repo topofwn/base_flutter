@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:base_flutter/bloc_models/auth_bloc.dart';
 import 'package:provider/provider.dart';
 
 class BlocProvider extends StatelessWidget {
@@ -13,7 +12,6 @@ class BlocProvider extends StatelessWidget {
     return MultiProvider(
       providers: [
         //Provider(builder: (context) => AppDatabase()),
-        ChangeNotifierProvider(builder: (context) => AuthBloc()),
       ],
       child: child,
     );
